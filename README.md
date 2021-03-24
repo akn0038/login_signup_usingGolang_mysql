@@ -26,13 +26,20 @@ go get golang.org/x/crypto/bcrypt
 go get github.com/go-sql-driver/mysql
 ```
 
-Inside of **signup.go** line **77** replace <example> with your own credentials
+Inside of **main.go** replace <example> with your own credentials
 
 ```go
 db, err = sql.Open("mysql", "<root>:<password>@/<dbname>")
 // Replace with 
 db, err = sql.Open("mysql", "myUsername:myPassword@/myDatabase")
 ```
+
+Now run main.go
+```bash
+go run main.go
+```
+Now visit
+localhost:8080
 
 
 
